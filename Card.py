@@ -11,8 +11,10 @@ class Card:
         return self.__suit
 
     def get_value(self):
-        return self.__value
+        return self.__value.value
+
+    def get_name(self):
+        return self.__value.name
 
     def to_string(self):
-        return self.__suit.name + "(" + str(self.__suit.value) + ")-" \
-               + self.__value.name + "(" + str(self.__value.value) + ")"
+        return "[" + self.__suit.name + "-" + self.__value.name + "]"

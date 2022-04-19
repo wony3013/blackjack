@@ -1,7 +1,7 @@
 from Value import Value
 
 
-class Player:
+class Dealer:
     __cards = []
 
     def __init__(self):
@@ -31,3 +31,4 @@ class Player:
         for card in self.__cards:
             hands += card.to_string()+" "
         return hands
+
