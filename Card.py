@@ -17,4 +17,4 @@ class Card:
         return self.__value.name
 
     def to_string(self):
-        return "[" + self.__suit.name + "-" + self.__value.name + "]"
+        return "[" + self.__suit.value + "-" + self.__value.name + "]"
